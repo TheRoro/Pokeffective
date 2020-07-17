@@ -10,6 +10,7 @@
     <v-main>
       <TypesResult/>
     </v-main>
+      <h4>Developed by: Rodrigo Ramirez</h4>
   </v-app>
 </template>
 
