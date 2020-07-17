@@ -59,23 +59,18 @@ export const store = new Vuex.Store({
         addTypesList(state, types){
             for(let i = 0; i < 18; i++) {
                 if (state.effects[i] === 0) {
-                    console.log(types[i]);
                     state.immunities.push(types[i]);
                 }
                 if (state.effects[i] === 0.25) {
-                    console.log(types[i]);
                     state.resistances025.push(types[i]);
                 }
                 if (state.effects[i] === 0.5) {
-                    console.log(types[i]);
                     state.resistances050.push(types[i]);
                 }
                 if (state.effects[i] === 1) {
-                    console.log(types[i]);
                     state.normalDamage.push(types[i]);
                 }
                 if (state.effects[i] === 2) {
-                    console.log(types[i]);
                     state.effective2.push(types[i]);
                 }
                 if (state.effects[i] === 4) {

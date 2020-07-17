@@ -33,8 +33,6 @@
             setType(newType, indexType){
                 this.$store.commit('setType', newType);
                 this.$store.commit('setIndex', indexType);
-                console.log("Index 1: ", this.$store.state.index1);
-                console.log("Index 2: ", this.$store.state.index2);
                 this.calculate();
             },
             resetType(){
@@ -55,11 +53,6 @@
                     }
                     this.$store.commit('addTypesList', this.typeList);
 
-                    console.log("Only one type: ", this.$store.state.effects);
-                    console.log("Immunities: ", this.$store.state.immunities);
-                    console.log("Resistances 0.5: ", this.$store.state.resistances050);
-                    console.log("Normal Damage: ", this.$store.state.normalDamage);
-                    console.log("Effective X2: ", this.$store.state.effective2);
                 }
                 else{
                     this.$store.commit('resetEffects');
@@ -70,20 +63,10 @@
                     }
                     this.$store.commit('addTypesList', this.typeList);
 
-                    console.log("Two types: ", this.$store.state.effects);
-                    console.log("Immunities: ", this.$store.state.immunities);
-                    console.log("Resistances 0.25: ", this.$store.state.resistances025);
-                    console.log("Resistances 0.5: ", this.$store.state.resistances050);
-                    console.log("Normal Damage: ", this.$store.state.normalDamage);
-                    console.log("Effective X2: ", this.$store.state.effective2);
-                    console.log("Effective X4: ", this.$store.state.effective4);
-
-
                 }
             }
         },
         created(){
-            console.log("Component created successfully");
             this.typeChart = [
                 /*bug*/
                 [2,4,2,2,1,1,1,1,1,4,2,2,2,1,4,2,1,2],
@@ -123,8 +106,6 @@
                 [2,2,1,2,2,2,4,2,2,1,4,2,2,2,2,4,2,1]
             ];
             this.typeList = ['BUG', 'DARK', "DRAGON", "ELECTRIC", "FAIRY", "FIGHTING", "FIRE", "FLYING", "GHOST", "GRASS", "GROUND", "ICE", "NORMAL", "POISON", 'PSYCHIC', "ROCK", "STEEL", "WATER"];
-            console.log(this.typeChart);
-            console.log(this.typeList);
         }
     }
 </script>
