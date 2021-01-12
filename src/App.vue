@@ -1,16 +1,10 @@
 <template>
   <v-app id="app-body" :class="this.$store.state.lastType.toLowerCase()">
         <h1 class="app-title">Pokeffective</h1>
-    <v-main>
       <SelectedTypes/>
-    </v-main>
-    <v-main>
       <TypesTable/>
-    </v-main>
-    <v-main>
       <TypesResult/>
-    </v-main>
-      <h4>Developed by: Rodrigo Ramirez</h4>
+      <Contact/>
   </v-app>
 </template>
 
@@ -18,6 +12,7 @@
 import SelectedTypes from "@/components/SelectedTypes";
 import TypesTable from "@/components/TypesTable";
 import TypesResult from "@/components/TypesResult";
+import Contact from "@/components/Contact";
 
 export default {
   name: 'App',
@@ -26,6 +21,7 @@ export default {
     TypesResult,
     TypesTable,
     SelectedTypes,
+    Contact,
   },
 
   data: () => ({
@@ -35,7 +31,19 @@ export default {
 </script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 
+  ::-webkit-scrollbar-track {
+    background: #272727;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #454545;
+    border-radius: 10px;
+  }
   #app-body{
     font-family: 'Orbitron', sans-serif;
     color: white;
