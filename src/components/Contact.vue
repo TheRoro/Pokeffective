@@ -5,7 +5,7 @@
                 <div class="row justify-center justify-md-start">
                     <div class="col col-auto">
                         <p class="linkto">
-                            <a class="linkto" href="https://github.com/8rb" target="_blank" rel="noreferrer">Developed by: Rodrigo Ramirez</a>
+                            <a class="linkto" href="https://github.com/theroro" target="_blank" rel="noreferrer">Developed by: Rodrigo Ramirez</a>
                         </p>
                     </div>
                 </div>
